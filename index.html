@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <meta charset="UTF-8">
     <title>我的简单网页</title>
     <style>
@@ -18,27 +17,7 @@
         }
     </style>
 </head>
-
-
-
-
-    
-
-
-
 <body>
-    <!-- 这里创建一个容器来显示 Markdown 文件的内容 -->
-    <div id="markdownContent"></div>
-
-    <script>
-        // 获取 Markdown 文件内容
-        fetch('1.md')
-            .then(response => response.text())
-            .then(md => {
-                // 将 Markdown 转换为 HTML 并显示在页面中
-                document.getElementById('markdownContent').innerHTML = marked(md);
-            });
-    </script>
 
     <header>
         <h1>欢迎来到我的网页</h1>
